@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/header.min.css">
+    <title>Template</title>
+</head>
+<body>
+    <div class="containerInit">
+        <header>
+            <div class="titulo">Desarrollador Web Profesional</div>
+            <div class="logo"></div>
+            <div class="name">Juan Cermeño</div>
+            <div class="texto">"Juntos lograremos lo imposible "</div>
+        </header>
+    </div>
+    <main>
+        <div class="container">
+            <div class="title">Hey Hola</div>
+Joan Cermeño Joven Venezolano 🇻🇪️ Ingeniero de Sistemas y ciencias de la computacion Conocimiento profundo de 4 lenguajes de programación, Conocimientos en los sistemas operativos UNIX con mas de 4 años de experiencia en el uso de software Open Sourse. Sin experiencia laboral, pero con multiples proyectos personales, cuenta con los poderes de hablar en publico Y escribir bien, colaborador, paciente.
+<div class="text"></div>
+        </div>
+    </main>
+        <script>
+            const contenedor = document.querySelector('body > div') 
+            const evento = a =>{
+                a == 1 ? contenedor.className = 'containerout' : contenedor.className = 'containerInit'
+            }
+
+            window.addEventListener("scroll",(a)=>{
+                a.preventDefault()
+                window.scrollY >= 100 ? evento(1) : evento(0)
+            })
+        </script>
+</body>
+</html>
